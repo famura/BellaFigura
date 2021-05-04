@@ -1,0 +1,81 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+% Template ----------------------------------------- %
+\documentclass{scrartcl} % could be any other class
+
+% Packages ----------------------------------------- %
+\usepackage{graphicx} % necessary for figures in pdf_tex format
+\graphicspath{{./images/}{./plots/}} % tell the package where too look; necessary when using subfolders
+\usepackage[usenames,svgnames,table,rgb,dvipsnames]{xcolor} % necessary for figures in pdf_tex format
+
+\usepackage[USenglish]{babel}
+
+\usepackage{mathtools} % loads amsmath
+\mathtoolsset{showonlyrefs}
+\usepackage{bm} % bold math
+% Sane math defaults
+\let\vec\mathbf % make vectors bold
+\newcommand*\diff{\mathop{}\!\mathrm{d}} % 'd' symbol for integrals
+
+\usepackage{subcaption} % for subfigures
+\usepackage[export]{adjustbox} % align included images vertically at the top
+\usepackage{wrapfig} % for figures wrapped in text
+
+\usepackage{xparse} % only used to define some custom commands
+
+
+% Custom Commands ---------------------------------- %
+\definecolor{famuraOrange}{RGB}{246,178,107}
+\newcommand{\actis}{\vec{a}}
+\newcommand{\pots}{\vec{p}}
+\newcommand{\stims}{\vec{s}}
+\newcommand{\potdynparams}{\vec{\chi}}
+\newcommand{\potsdynsym}{\vec{f}}
+\DeclareDocumentCommand{\potdyn}{O{} m}{\potsdynsym_{#1}\!\left( #2\right)} % 1 optional arg (subscript)
+\DeclareDocumentCommand{\potsdyn}{O{} m}{\potsdynsym_{#1}\!\left( #2\right)} % 1 optional arg (subscript)
+\newcommand{\jointspos}{\bm{q}}
+\newcommand{\taskvel}{\dot{\taskpos}}
+\newcommand{\taskposs}{\bm{x}}
+\newcommand{\taskvels}{\dot{\taskposs}}
+\newcommand{\tasksposs}{\bm{X}}
+\newcommand{\tasksvels}{\dot{\tasksposs}}
+
+
+% Packages that should be loaded at last ----------- %
+\usepackage[hidelinks,bookmarks=true]{hyperref}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+% Title & Author
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+\title{}
+\date{}
+\author{Fabio Muratore \\ \href{https://github.com/famura}{github.com/famura}}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+\begin{document}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+
+The figures are here to check if the PDFs compile properly.
+
+\begin{figure}[h]
+	\centering
+	\def\svgwidth{0.5\columnwidth} % there is no \svgheight command
+	\input{images/annotated_image.pdf_tex}
+	\caption{%
+		An example showing an image with annotations. The fonts match the one of the document
+	}%
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+    % no scaling here, but could be done
+	\input{images/diagram.pdf_tex}
+	\caption{%
+		An example showing cascaded custom LaTeX commands and basic svg objects in Inkscape.
+	}%
+\end{figure}
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+\end{document}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %

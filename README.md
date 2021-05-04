@@ -3,11 +3,11 @@ A workflow showing how to combine [Inkscape](https://inkscape.org/de/) and LaTeX
 
 ## Why?
 
-First, writing this tutorial is a nice way to procrastinate. Aside form this, I just can't take another badly formatted figure where the font does not match the main text. Seriously, nobody likes them. Moreover, figures and tables are the only thing that 99% of people read in your paper. It's sad, but true. If it is obvious that you don't put in the effort to make the important elements shine, what about the maybe even more critical details of your work? Finally, it is not hard to get this done nicely.
+Firstly, writing this tutorial is a nice way to procrastinate. Aside from this, I just can't take another badly formatted figure where the font does not match the main text. Seriously, nobody likes them. Moreover, figures and tables are the only thing that 99% of people read in your paper. It's sad, but true. If it is obvious that you don't put in the effort to make the important elements shine, what about the maybe even more critical details of your work? Finally, it is not hard to get this done nicely.
 
 ### Why Inkscape?
 
-[Inkscape](https://inkscape.org/de/) is a great and (rather) easy to use program available on linux, Windows, and macOS. But most importantly, it lets us save our figures in pdf and pdf_tex files, thereby separating the graphical content from the text. We will see later why this is important.
+[Inkscape](https://inkscape.org/de/) is a great and (rather) easy to use program available on linux, Windows, and macOS. Most importantly, it lets us save our figures in pdf and pdf_tex files, thereby separating the graphical content from the text. We will see later why this is important.
 
 ### Why Not Tikz?
 
@@ -37,7 +37,7 @@ The second example will provided more details on how to place the text (anchors)
 <img alt="Saving a copy" src="images/save_a_copy.png" width="80%"/>
 </p>
 
-After clicking on `Save`, Inkscape wants to know more details on how to save your file. Select the options as displayed below. There is a subtle pitfall here. We select `Use exported object's size` to not make out export as large as the whole Inkscape canvas. However this meas, that if you only select one object and then save, it will only save that object. I know this is crazy news. So make sure to select nothing or all objects.
+After clicking on `Save`, Inkscape wants to know more details on how to save your file. Select the options as displayed below. There is a subtle pitfall here. We select `Use exported object's size` to not make out export as large as the whole Inkscape canvas. However this means, that if you only select one object and then save, it will only save that object. I know this is crazy news. So make sure to select nothing or all objects.
 
 <p align="center">
 <img alt="Configuration for saving as pdf" src="images/save_as_pdf.png" width="50%"/>
@@ -105,7 +105,7 @@ It is best to align your text boxes with their anchors using helper lines (the b
 
 which can be found in the top row. You don't find them? Most likely you did not select the right menue. Go over the text box you want to edit and hit `F8`. There is also a `Text and Font` panel that comes up when pressing `Ctrl + Shift + t`. See [here](https://graphicdesign.stackexchange.com/questions/116197/how-do-you-move-the-text-anchor-in-inkscape) if you have questions left.
 
-Let me give you one practical example of the achor placement. Look at the text in the boxed above. The helper lines mark the center. Next, you move the anchor on top of the center (see here for [snapping to objects in Inkscape](https://alpha.inkscape.org/vectors/www.inkscapeforum.com/viewtopic2cd0.html?t=33101)). But when you now compile, the text appears vertically too high. I recommend giving it two ticks down using the moment menue (`F1`) and the downwards arrow - et voila.
+Let me give you one practical example of the anchor placement. Look at the text in the boxed above. The helper lines mark the center. Next, you move the anchor on top of the center (see here for [snapping to objects in Inkscape](https://alpha.inkscape.org/vectors/www.inkscapeforum.com/viewtopic2cd0.html?t=33101)). But when you now compile, the text appears vertically too high. I recommend giving it two ticks down using the moment menue (`F1`) and the downwards arrow - et voila.
 
 Have fun creating some beautiful figures.
 
